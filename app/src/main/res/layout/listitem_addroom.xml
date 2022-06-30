@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/la_image"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/bg_imageview_listitem"/>
+
+    <TextView
+        android:id="@+id/la_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoomName"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

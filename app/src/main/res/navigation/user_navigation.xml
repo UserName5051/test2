@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@id/lightFragment">
+
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.example.test5.View.LightFragment"
+        android:label="light_fragment"
+        tools:layout="@layout/light_fragment" />
+    <fragment
+        android:id="@+id/thermostatFragment"
+        android:name="com.example.test5.View.ThermostatFragment"
+        android:label="thermostat_fragment"
+        tools:layout="@layout/thermostat_fragment" />
+</navigation>

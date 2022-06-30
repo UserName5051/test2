@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bm_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+
+    <item android:id="@+id/bm_statistic"
+        android:title="Statistics"
+        android:icon="@drawable/ic_baseline_10mp_24"/>
+
+
+    <item android:id="@+id/bm_routines"
+        android:title="Routines"
+        android:icon="@drawable/ic_baseline_10k_24"/>
+
+
+    <item android:id="@+id/bm_setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_baseline_person_24"/>
+</menu>

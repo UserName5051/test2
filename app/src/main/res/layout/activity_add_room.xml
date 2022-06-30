@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRoomActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/addroom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:title="Add Room"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24">
+
+        <Button
+            android:id="@+id/addroom_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textStyle="italic"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="right"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Room's name"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/addroom_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:hint="Room Name"
+        android:background="@drawable/bg_addroom_edittext"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select room's"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <GridView
+        android:id="@+id/addroom_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        tools:listitem="@layout/listitem_addroom"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="10dp"/>
+</LinearLayout>
